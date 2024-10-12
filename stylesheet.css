@@ -1,0 +1,44 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/space1.jpg'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura de la sección al 100% de la ventana */
+}
+
+nav{
+    font-family: "Monserrat",sans-serif;
+    font-size: normal;
+    font-size: 23px;
+    margin-bottom: 100px;
+}
+
+.extra-margin{
+    margin-top: 250px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo img{
+    height: 80px;
+    margin-left: 5px;
+}
+
+
+
+
