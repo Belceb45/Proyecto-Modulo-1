@@ -1,44 +1,86 @@
-
+@charset "UTF-8";
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url('img/space1.jpg'); /* Reemplaza con la ruta correcta de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra toda la sección */
-    background-position: center center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    height: 100vh; /* Ajusta la altura de la sección al 100% de la ventana */
+body {
+  background-image: url("img/space1.jpg"); /* Reemplaza con la ruta correcta de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 35vh; /* Ajusta la altura de la sección al 100% de la ventana */
 }
 
-nav{
-    font-family: "Monserrat",sans-serif;
-    font-size: normal;
-    font-size: 23px;
-    margin-bottom: 100px;
+.navbar {
+  background-color: rgba(35, 34, 34, 0.8);
 }
 
-.extra-margin{
-    margin-top: 250px;
+nav {
+  font-family: "Monserrat", sans-serif;
+  font-size: normal;
+  font-size: 16px;
+  margin-bottom: 100px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.logo img{
-    height: 80px;
-    margin-left: 5px;
+.animation:hover {
+  transform: scale(1.2);
 }
 
+.animation {
+  transition: transform 0.6s;
+}
 
+.extra-margin {
+  margin-top: 250px;
+  margin-bottom: 10px;
+}
 
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
+.logo img {
+  height: 80px;
+  margin-left: 5px;
+}
+
+/*Animaciones*/
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  padding-bottom: 15px;
+  transition: transform 0.7s;
+}
+
+.card h5 {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 15px;
+}
+
+.place-card {
+  margin-top: 155px;
+  margin-bottom: 50px;
+  height: 500px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.places {
+  text-align: center;
+  align-items: flex-start;
+}/*# sourceMappingURL=stylesheet.css.map */

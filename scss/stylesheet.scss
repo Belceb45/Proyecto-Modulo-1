@@ -1,0 +1,92 @@
+
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'scss/_mixing.scss';
+@import 'scss/_variables.scss';
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('img/space1.jpg'); /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra toda la sección */
+    background-position: center center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 35vh; /* Ajusta la altura de la sección al 100% de la ventana */
+}
+
+.navbar{
+    background-color: $succes-color;
+}
+
+nav{
+    font-family: "Monserrat",sans-serif;
+    font-size: normal;
+    font-size: 16px;
+    margin-bottom: 100px;
+    padding: $card-padding;
+    border-radius:$card-border-radius;
+}
+
+.animation:hover{
+    transform: scale(1.2);
+}
+
+.animation{
+    transition: transform .6s;
+}
+
+.extra-margin{
+    margin-top: 250px;
+    margin-bottom: 10px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo img{
+    height: 80px;
+    margin-left: 5px;
+}
+
+/*Animaciones*/
+.card:hover{
+    transform: scale(1.1);
+}
+
+.card{
+    padding-bottom: 15px;
+    transition: transform .7s;
+    
+}
+
+.card h5{
+    font-size: 16px;
+}
+
+.card p{
+    font-size: 15px;
+}
+
+.place-card{
+    margin-top: 155px;
+    margin-bottom: 50px;
+    height: 500px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.places {
+    
+    text-align: center;
+    align-items: flex-start;
+}
