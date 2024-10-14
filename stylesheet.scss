@@ -1,0 +1,342 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'scss/_mixing.scss';
+@import 'scss/_variables.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('img/space1.jpg');
+    /* Reemplaza con la ruta correcta de tu imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la sección */
+    background-position: center center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    height: 35vh;
+    /* Ajusta la altura de la sección al 100% de la ventana */
+}
+
+
+
+.navbar {
+    background-color: $primary-color;
+}
+
+.container-fluid button {
+    color: $secundary-color;
+    
+}
+
+nav {
+    font-family: "Monserrat", sans-serif;
+    font-size: normal;
+    font-size: 16px;
+    margin-bottom: 100px;
+    padding: $card-padding;
+    border-radius: $card-border-radius;
+}
+
+.animation:hover {
+    transform: scale(1.2);
+}
+
+.animation {
+    transition: transform .6s;
+}
+
+.extra-margin {
+    margin-top: 250px;
+    margin-bottom: 10px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 80px;
+    margin-left: 5px;
+}
+
+/*Animaciones*/
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    padding-bottom: 15px;
+    transition: transform .7s;
+    border-radius: $card-border-radius;
+}
+
+.card h5 {
+    font-size: 16px;
+}
+
+.card p {
+    font-size: 15px;
+}
+
+.place-card {
+    margin-top: 155px;
+    margin-bottom: 50px;
+    height: 500px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.places {
+    padding-left: 0%;
+    margin-left: 200px;
+    text-align: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.places h1 {
+    margin-bottom: 50px;
+}
+
+.cont-back1 {
+    background-color: $primary-color;
+    width: 100vw;
+    padding: 50px 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.carousel .row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.carousel .col-md-6 {
+    padding: 0;
+    /* Elimina el padding entre columnas para que no haya espacios */
+}
+
+.carousel img {
+    height: auto;
+    width: 100%;
+    /* Asegura que las imágenes ocupen todo el ancho */
+}
+
+.carousel-item {
+    display: flex;
+    /* Asegura que el contenido y las imágenes se alineen */
+}
+
+
+
+
+.global-form {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin-left: 0;
+    background-image: url(img/space1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    margin-top: 70px;
+    padding: 32px 64px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.txt-form {
+    padding-left: 64px;
+    background-color: white;
+    color: black;
+    border-radius: $card-border-radius;
+}
+
+.form-img {
+    padding-right: 20px;
+}
+
+.form-img img {
+    height: 250px;
+    border-radius: $card-border-radius;
+}
+
+
+.form-usuario {
+    background-color: white;
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 550px;
+
+}
+
+.form-usuario h2 {
+    color: #283629;
+    font-size: 35px;
+}
+
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-form label {
+    color: #283629;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.input-form input,
+.input-form textarea {
+    padding: 17px 20px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #edfff0;
+    border: 2px solid #f0faf1;
+    color: #283629;
+    outline: none;
+}
+
+.input-form input::placeholder,
+.input-form textarea::placeholder {
+    color: #b5cab6;
+}
+
+.form-text {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.form-text a {
+    color: #76b28e;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn {
+    font-size: 16px;
+    color: white;
+    border: 0;
+    border-radius: 25px;
+    background-color: #51d94c;
+    box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #50e04b;
+}
+
+@media(max-width:932px) {
+    body {
+        padding: 30px;
+        // height: 5%;
+
+    }
+
+    .global-form {
+        width: 100%;
+
+    }
+
+    .extra-margin {
+        margin-top: 100px;
+        margin-bottom: 0;
+    }
+
+    .responsive-dip {
+        margin-bottom: 75px;
+    }
+
+    .place-card {
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 300px;
+      
+       
+      
+    }
+
+    .places {
+        color: black;;
+        margin: 0 0;
+    }
+
+    .cont-back1 {
+        background-color: white;
+        margin: 0 0;
+        padding-top: 0;
+        padding-bottom: 50px;
+        
+    }
+
+
+    .form {
+        margin-left: 0;
+        background-color: white;
+        margin-top: 0;
+        padding: 0 0;
+        display: flex;
+        justify-content: space-around;
+        height: 0vh;
+    }
+
+    .form-img {
+        display: none;
+    }
+
+    .txt-form {
+        display: none;
+    }
+
+    .form {
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form-usuario form {
+        padding: 0;
+        width: 100%;
+    }
+
+    .form-usuario {
+
+        padding: 20px 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        text-align: center;
+        width: 372px;
+
+    }
+
+    .input-form input {
+        padding: 15px;
+    }
+}

@@ -37,15 +37,14 @@
                 </ul>
                 <div class="d-flex justify-content-center align-items-center gap-3">
                     <a href="#login" class="text-white animation">Ingresar</a>
-                    <a href="#signup" class="text-white text-decoration-none px-3 py-1 rounded-4 animation"
-                        style="background-color: rgb(97, 18, 50)">Registrarse</a>
+                    <a href="#signup" class="text-white text-decoration-none px-3 py-1 rounded-4 animation border border-white">Registrarse</a>
                 </div>
             </div>
         </div>
     </nav>
-    <section class="container extra-margin">
+    <section class="container extra-margin ">
         <div class="row justify-content-center">
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 responsive-dip">
                 <div class="card">
                     <img src="img/ciberseguridad.webp" alt="Diplomado de Ciberseguridad" class="card-img-top">
                     <div class="card-body">
@@ -58,7 +57,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 responsive-dip">
                 <div class="card">
                     <img src="img/java.jpg" alt="Diplomado de FullStack en Java" class="card-img-top">
                     <div class="card-body">
@@ -70,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4 responsive-dip">
                 <div class="card">
                     <img src="img/ia.jpg" alt="Diplomado de IA con Python" class="card-img-top">
                     <div class="card-body">
@@ -86,17 +85,159 @@
             </div>
         </div>
     </section>
-    <section class="container extra-margin">
-        <div class="place-card">
-            <div class="places">
-                <h1>Nuestras Cedes</h1>
-                <p>CodeMex cuenta con multiples cedes a lo largo de la ciudad de</br> México y en el estado de Méxicio</p>
+    <section class="container-fluid extra-margin cont-back1 ">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="place-card">
+                    <div class="places">
+                        <h1>Nuestras Cedes</h1>
+                        <p>CodeMex cuenta con múltiples cedes a lo largo de la ciudad de<br> México y en el estado de
+                            México</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel con Bootstrap -->
+            <div class="col-md-6">
+                <article class="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-media">
+                                        <figure>
+                                            <img src="img/escom.jpg" alt="ESCOM" width="600px" class="imgx" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="fontc3">ESCUELA SUPERIOR DE COMPUTO</h4>
+                                        <h2 class="fontc1">Av. Juan de Dios Bátiz, Nueva Industrial Vallejo, Gustavo A.
+                                            Madero, 07320 Ciudad de México, CDMX</h2>
+                                        <div class="results">
+                                            <p class="fontc2">Esta escuela esta posicionada como una de las mejores en
+                                                su area</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <center>
+                                            <button class="btn-color">Ver mas</button>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-media">
+                                        <figure>
+                                            <img src="img/uni2.jpg" alt="CDMEX" width="600px" class="imgx" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="fontc3">UNIVERSIDAD CODMEX TLALPAN</h4>
+                                        <h2 class="fontc1">Calz. de Tlalpan 3016-3058, Coapa, Ex-Hacienda Coapa,
+                                            Coyoacán, 04910 Ciudad de México, CDMX</h2>
+                                        <div class="results">
+                                            <p class="fontc2">Esta escuela esta enfocada en formar expertos FullStack en
+                                                Java</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <center>
+                                            <button class="btn-color">Ver mas</button>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-media">
+                                        <figure>
+                                            <img src="img/uni3.jpg" alt="CDMEX" width="600px" class="imgx" />
+                                        </figure>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="fontc3">UNIVERSIDAD CODMEX TICOMAN</h4>
+                                        <h2 class="fontc1">Av Instituto Politécnico Nacional 2580, La Laguna Ticoman,
+                                            Gustavo A. Madero, 07340 Ciudad de México, CDMX</h2>
+                                        <div class="results">
+                                            <p class="fontc2">Esta escuela esta enfocada en formar expertos en
+                                                Ciberseguridad e IA</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <center>
+                                            <button class="btn-color">Ver mas</button>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Más items del carrusel -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <!-- <ol class="carousel-indicators">
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        </ol> -->
+                    </div>
+                </article>
             </div>
         </div>
-        <article class="carrousel">
-            
-        </article>
     </section>
+
+    <div class="global-form">
+        <div class="txt-form">
+            <h1>Registrate y resuelve tus dudas</h1>
+            <p>Al ingresar tus datos nos pondremos en contacto contigo y recibiras asesoria sobre el proceso de
+                admision</p>
+        </div>
+        <div class="form">
+            <div class="form-usuario">
+                <form>
+                    <h2>Contacto</h2>
+                    <div class="input-form">
+
+                        <label for="name">Nombre(s)</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+
+                        <label for="lastname">Primer apellido</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Primer apellido">
+
+                        <label for="lastname">Segundo apellido</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Segundo apellido">
+
+                        <label for="date">Fecha de nacimiento</label>
+                        <input type="date" name="date" id="date" placeholder="fecha de nacimiento">
+
+                        <label for="email">Correo electronico</label>
+                        <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
+
+                        <label for="phone">Telefono celular</label>
+                        <input type="tel" name="phone" id="phone" placeholder="Telefono">
+
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+                        <div class="form-text">
+                            <a href="#">Politica de privacidad</a>
+                            <a href="#">Terminos y condiciones</a>
+                        </div>
+                        <input class="btn" type="submit" value="enviar">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
