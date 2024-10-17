@@ -1,5 +1,5 @@
-@mixin card-base($primary-color,$card-padding,$card-border-radius){
-    border-color:$primary-color ;
+@mixin card-base($secundary-color,$card-padding,$card-border-radius){
+    border-color:$secundary-color ;
     border-radius: $card-border-radius;
     padding:$card-padding ;
 }

@@ -13,13 +13,11 @@
 
 body {
     background-image: url('img/space1.jpg');
-    /* Reemplaza con la ruta correcta de tu imagen */
     background-size: cover;
     /* Asegura que la imagen cubra toda la sección */
     background-position: center center;
     /* Centra la imagen */
     background-repeat: no-repeat;
-    
     height: 35vh;
    
 }
@@ -75,9 +73,9 @@ nav {
 }
 
 .card {
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
     transition: transform .7s;
-    border-radius: $card-border-radius;
+    @include card-base;
 }
 
 .card h5 {
