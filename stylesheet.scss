@@ -75,7 +75,7 @@ nav {
 .card {
     // padding-bottom: 15px;
     transition: transform .7s;
-    @include card-base;
+    @include card-base();
 }
 
 .card h5 {
